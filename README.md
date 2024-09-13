@@ -79,10 +79,10 @@ First you need to ensure that you have node, npm and a code editor installed. Na
 
 **Installing Typescript**
 ```bash
-npm init -y
+npm install typescript --save-dev
 ```
 ```bash
-npm install typescript --save-dev
+npm init -y
 ```
 
 **Setting up the compiler**
