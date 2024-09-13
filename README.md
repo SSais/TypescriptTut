@@ -86,6 +86,7 @@ npm install typescript --save-dev
 ```
 
 **Setting up the compiler**
+
 The compiler is a crucial part of component of TypeScript. It's responsible for converting TypeScript code into JavaScript code but also provides feedback during development as it performs static type analysis on your code and catches type related errors. Catching errors early!
 ```bash
 npx tsc --init
