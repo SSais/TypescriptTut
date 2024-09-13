@@ -84,17 +84,39 @@ Navigate to the directory where this file is kept and run the following commands
 ```bash
 npm init -y
 npm install typescript --save-dev
-npx tsc --init
 
 ```
-
+Now you have installed typescript, but you need a compiler (what is a ty[escript compiler--
 
 ```bash
-
+npx tsc --init
 ```
+After you have created your type script compiler named, tsconfig.json . You need to adjust the settings. You can use the following commonly used adjustments or look into the file to create your own settings.
+
+```bash
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true
+  }
+}
+```
+Create a src Directory.This is where you’ll put your TypeScript files:.
+Inside the src directory create a file named exercise2.ts
+
+Enter the following into the file: 
+
+function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+
+let user = 'World';
+console.log(greet(user));
 
 
-normal js 
+navigate to the file in your command line and run npx tsc
 
-
-with typescript 
+Run the TypeScript compiler to convert TypeScript to JavaScript, you will see the generated file js file in dist folder that has now been created. 
