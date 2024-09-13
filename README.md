@@ -107,23 +107,24 @@ You should notice that a new file has been generated called: tsconfig.json. This
 
 **Setting up the src directory**
 
-Create a src Directory.This is where you’ll put your TypeScript files:.
-Inside the src directory create a file named exercise2.ts
+Now you have to create a src directory where the TypeScript files will be saved
+Inside the src directory create a file named Exercise2.ts.
 
 Enter the following into the file: 
 
+```typescript
 function greet(name: string): string {
   return `Hello, ${name}!`;
 }
 
 let user = 'World';
 console.log(greet(user));
+```
 
+Navigate to the src directory in your command line and the following command:
 
-navigate to the file in your command line and run npx tsc
+```bash
+run npx tsc
+```
 
-Run the TypeScript compiler to convert TypeScript to JavaScript, you will see the generated file js file in dist folder that has now been created. 
-
-
-
-
+You should have noticed that the TypeScript compiler converted the TypeScript file to JavaScript, and saved this in a newly generated dist folder. Any errors picked up by the compiler will be printed in the terminal during the compilation. 
