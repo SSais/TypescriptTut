@@ -9,6 +9,7 @@ This tutorial assumes that you have basic knowledge of JavaScript, any feedback 
 
 In JavaScript, a data type refers to the classification or categorization of data values. As JavaScript is a dynamic language, type can change throughout a program. As you may already know, there are 2 data types in JavaScript: primitive and non-primitive. <br />
 Do you remember what they are?
+<br>
 
 **What are the primitive data types?**
 <details>
@@ -23,6 +24,7 @@ Do you remember what they are?
 6) Symbol 
 7) BigInt 
 </details>
+<br>
 
 **What are the non-primtive data types?**
 <details>
@@ -37,22 +39,34 @@ Do you remember what they are?
 6) Map
 </details>
 
-You are able to determine type in JavaScript using typeOf, TypeOf is not perfect, it is not able to determine the type of array. Please read the following to see the limitations of typeOf:
-* (Recommended) https://www.w3schools.com/js/js_typeof.asp
+<br>
+You are able to determine type in JavaScript using typeOf, TypeOf is not perfect, it is not able to determine the type of array. Please read the following to see the limitations of typeOf: <br /> 
+* (Recommended) https://www.w3schools.com/js/js_typeof.asp <br /> 
 * (Optional) https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/
+<br>
+<br>
 
-**Exercise 1** Please complete exercise 1 in index... and determine what all the types are.
+**Exercise 1:** Please complete exercise1.js.
 
-#### Typescript
+### Typescript
 
-TypeScript is a programming language that builds on top of JavaScript. It adds a "type system" to JavaScript, which means:
-You declare what type of data each part of your code should be (like numbers, text, or more complex structures).
-The TypeScript tool checks your code as you write it, pointing out potential mistakes before you run the program.
+TypeScript is a programming language that builds on top of JavaScript. The main feature that Typescript adds is static typing (this is optional, valid JavaScript will still work without static typing). Static typing is where you can specify types for variable, function parameters, and return values.
 
-It's a superset of JavaScript, which means that any valid JavaScript code is also valid TypeScript code. TypeScript adds optional static typing and other features to JavaScript, aiming to make it easier to develop and maintain large-scale applications.
-Key features of TypeScript include:
-Static typing: You can specify types for variables, function parameters, and return values.
-Object-oriented programming: It supports classes, interfaces, and modules.
+Below is an example of a simple string, in both JavaScript and Typescript. Notice the difference, and also think about how you would apply this to other datatypes:  
+<br>
+```js
+//In JavaScript
+let greeting = "Hello, World!";
+
+console.log(greeting);  // Output: Hello, World!
+```
+
+```tsx
+//In Typescript
+let greeting: string = "Hello, World!";
+
+console.log(greeting);  // Output: Hello, World!
+```
 
 
 ### Why and when should I use typescript?
@@ -129,6 +143,8 @@ Would you like me to expand on any specific aspect of TypeScript's benefits or u
 
 ### So how can I use it?
 
+Let's start by creating a file that will allow us to use Typescript. 
+In the root directory, create a file named exercise2.js 
 
 
 
