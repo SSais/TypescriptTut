@@ -41,10 +41,9 @@ Do you remember what they are?
 
 <br>
 You are able to determine type in JavaScript using typeOf, TypeOf is not perfect, it is not able to determine the type of array. Please read the following to see the limitations of typeOf: <br /> 
+
 * (Recommended) https://www.w3schools.com/js/js_typeof.asp <br /> 
 * (Optional) https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/
-<br>
-<br>
 
 **Exercise 1:** Please complete exercise1.js.
 
@@ -68,131 +67,34 @@ let greeting: string = "Hello, World!";
 console.log(greeting);  // Output: Hello, World!
 ```
 
-
-### Why and when should I use typescript?
-
-The big advantage is that it helps catch errors early and makes it easier to work on large projects, especially in teams. When you're done, TypeScript code gets converted into regular JavaScript so web browsers can understand it.
-
-TypeScript offers several benefits that make it attractive for developers and organizations. Here are the key advantages and scenarios where TypeScript is particularly beneficial:
-Benefits of using TypeScript:
-
-Enhanced code quality:
-Static typing helps catch errors early in development
-Reduces runtime errors and makes debugging easier
-
-
-Improved maintainability:
-Type definitions make code more self-documenting
-Easier to refactor and understand code structure
-
-
-Better developer experience:
-Improved autocomplete and IntelliSense in IDEs
-Faster development due to early error detection
-
-
-Scalability:
-Designed for building large-scale applications
-Improves code organization through modules and namespaces
-
-
-Enhanced collaboration:
-Type definitions serve as a form of documentation
-Easier for team members to understand and work with each other's code
-
-
-JavaScript compatibility:
-Can gradually adopt TypeScript in existing JavaScript projects
-Compiles to JavaScript, ensuring broad compatibility
-
-Libraries and frameworks:
-Developing reusable code that others will consume
-Creating APIs with clear interfaces
-
-
-Refactoring legacy JavaScript:
-Gradually improving existing JavaScript codebases
-Adding type safety to critical parts of an application
-
-
-
-
-
-Projects using modern JavaScript features:
-
-TypeScript supports the latest ECMAScript features, even before full browser adoption
-
-
-Applications requiring high reliability:
-
-Financial systems, healthcare applications, or other domains where errors can have significant consequences
-
-
-Integration with other typed languages:
-
-Projects that interface with backend services written in typed languages (e.g., Java, C#)
-
-
-
-While TypeScript offers many benefits, it's worth noting that it may introduce some complexity and a learning curve for developers new to static typing. It also requires a compilation step, which can slightly increase build times. However, for many projects, especially larger ones, the benefits often outweigh these considerations.
-Would you like me to expand on any specific aspect of TypeScript's benefits or use cases?
-
-
-
+The big advantage of typescript is that it sanitises code as it can add type safety to critical parts of an application, such as forms where users can input inforamtion. As you can see from the example above, typescript also helps you catch errors earlier as the type definitions make the code more self documenting and easier to follow and understand. Which is particualrly helpfull when working in teams, making collabroation easier. 
 
 
 ### So how can I use it?
 
-Let's start by creating a file that will allow us to use Typescript. 
-In the root directory, create a file named exercise2.js 
+Let's start by creating a file that will allow us to write Typescript.
+
+First you need to ensure that you have node, npm and a code editor installed.
 
 
+Navigate to the directory where this file is kept and run the following commands to set up Typescipt:
+
+
+
+```bash
+npm init -y
+npm install typescript --save-dev
+npx tsc --init
+
+```
+
+
+```bash
+
+```
 
 
 normal js 
 
 
 with typescript 
-
-
-
-
-
-```tsx
-
-type Color = {
-    color1:number;
-    color2: string;
-    isValid: boolean;
-    addressLines: string[];
-};
-
-console.log(Adress)
-
-```
-### Knowledge check
-
-How can you determine type in JavaScript?
-<details>
-
-  <summary>Click me</summary>
-  
-  ### Heading
-  1. Foo
-  2. Bar
-     * Baz
-     * Qux
-
-  ### Some Javascript
-  ```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
-</details>
-
-
-
-
-### Time to Typescript  
-
