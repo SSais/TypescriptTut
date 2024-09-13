@@ -1,4 +1,4 @@
-# Typescript Tutorial
+# Typescript 101
 
 👋
 Welcome! <br /> 
@@ -42,6 +42,8 @@ You are able to determine type in JavaScript using typeOf, TypeOf is not perfect
 * (Optional) https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/
 
 **Exercise 1** Please complete exercise 1 in index... and determine what all the types are.
+
+#### Typescript
 
 TypeScript is a programming language that builds on top of JavaScript. It adds a "type system" to JavaScript, which means:
 You declare what type of data each part of your code should be (like numbers, text, or more complex structures).
