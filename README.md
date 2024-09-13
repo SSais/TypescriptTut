@@ -124,7 +124,7 @@ console.log(greet(user));
 Navigate to the src directory in your command line and the following command:
 
 ```bash
-run npx tsc
+npx tsc
 ```
 
 You should have noticed that the TypeScript compiler converted the TypeScript file to JavaScript, and saved this in a newly generated dist folder. Any errors picked up by the compiler will be printed in the terminal during the compilation. 
